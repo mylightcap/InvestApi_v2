@@ -1,0 +1,6 @@
+@LightCap.InvestmentApi.Api_HostAddress = http://localhost:5168
+
+GET {{LightCap.InvestmentApi.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

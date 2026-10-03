@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\LightCap.InvestmentApi.Domain\LightCap.InvestmentApi.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.1.1" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.28.0" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+    <PackageReference Include="FluentResults" Version="4.0.0" />
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+    <PackageReference Include="MediatR" Version="14.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Contracts\Abstractions\Integrations\" />
+    <Folder Include="Common\Contracts\Dtos\" />
+    <Folder Include="Common\Contracts\ViewModels\" />
+    <Folder Include="Common\ResponseHandler\" />
+    <Folder Include="Common\Validators\" />
+    <Folder Include="Features\Auth\Login\Queries\" />
+    <Folder Include="Features\Auth\Registration\Queries\" />
+    <Folder Include="VMs\" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
